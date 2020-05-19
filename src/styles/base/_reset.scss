@@ -1,0 +1,75 @@
+
+
+
+
+/*
+  ///////////////////////
+ //////// RESET ////////
+///////////////////////
+ */
+
+ @import url('https://fonts.googleapis.com/css?family=Cabin:400,700|Herr+Von+Muellerhoff|Source+Sans+Pro&display=swap');
+
+:root {
+  scroll-behavior: smooth;
+  font-size: 1rem;
+}
+
+
+html {
+  scroll-behavior: smooth;
+  font-size: 1rem;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  font-family: $body-font;
+  overflow-X: hidden;
+}
+
+h1 {
+  text-align: center;
+  color: $accent-clr;
+}
+
+h2 {
+  text-align: center;
+}
+
+p{
+  line-height: 23px;
+  color: $main-clr;
+  text-align: center;
+}
+
+section {
+  padding: $section-spacing;
+  max-width: 1300px;
+  margin: 0 auto;
+}

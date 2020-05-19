@@ -1,0 +1,46 @@
+
+
+
+/*
+  ////////////////////////
+ ///////// HEADER ///////
+////////////////////////
+ */
+
+ header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 50px;
+  padding: 1.2em 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:rgba(#121212, 0);
+  transition: background-color .4s ease-in;
+}
+
+.header-background{
+  background-color:rgba(#121212, .9);
+  transition: background-color .4s ease-in;
+}
+
+  /* /////// LOGO ///// */
+  
+.logo{
+  color: $white-clr;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+
+
+/* MEDIA QUERIES */
+
+// @media(min-width: $bp-1){
+//   header{
+//     justify-content: space-between;
+//   }
+// }

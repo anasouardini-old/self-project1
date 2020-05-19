@@ -1,0 +1,141 @@
+
+
+
+
+/*
+  /////////////////////////
+ //////// GENERAL ////////
+/////////////////////////
+ */
+
+
+.description p{
+  margin-bottom:  1.5rem;
+}
+
+.btn{
+  outline: none;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: -2px;
+}
+
+.body-btn{
+  position: relative;
+  font-size: 0.93rem;
+  color: $accent-clr;
+  transition: color .3s ease-in;
+}
+
+.body-btn::before{
+  content: '';
+  position: absolute;
+  left: -1px;
+  bottom: -3px;
+  height: 2px;
+  width: 100%;
+  background-color: $accent-clr;
+  transition: background-color .3s ease-in;
+}
+
+.body-btn:hover,
+.body-btn:focus{
+  color: $secondary-clr;
+  transition: color .3s ease-in;
+}
+
+.body-btn:hover::before,
+.body-btn:focus::before {
+  background-color: $secondary-clr;
+}
+
+.global-headline{
+  text-align: center;
+  margin-top: 2.4rem;
+}
+
+.global-headline .asterisk{
+  color: $main-clr;
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+}
+
+.global-headline .sub-headline{
+  letter-spacing: -1px;
+  line-height: 2.6rem;
+  font-family: $secondary-font;
+  color: $accent-clr;
+  font-size: 6rem;
+  font-weight: 100;
+  opacity: 0;
+  animation: fadeUp .5s forwards;
+  animation-delay: .75s;
+}
+
+.global-headline .sub-headline::first-letter{
+  text-transform: uppercase;
+}
+
+.global-headline .headline{
+  text-transform: uppercase;
+  color: $secondary-clr;
+  letter-spacing: 0.4rem;
+  margin-left: 0.4rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  opacity: 0;
+  animation: scale .5s forwards;
+  animation-delay: .5s;
+}
+
+.between{
+  min-height: 65vh;
+  display: flex;
+  align-items: center;
+}
+
+.between .headline{
+  color: $white-clr;
+}
+
+.image-group{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.93em;
+}
+
+.info .description{
+  text-align: center;
+  margin-bottom: 1.8rem;
+}
+
+/* MEDIA QUERIES */
+
+@media(min-width: $bp-1){
+  .container{
+    width:80%;
+  }
+
+  .info{
+    display: flex;
+    align-items: center;
+  }
+
+  p{
+    max-width: 27rem;
+    margin: 0 auto;
+  }
+
+  .info > div{
+    flex: 1;
+  }
+
+  .info > div + div{
+    margin-left: 1.5em;
+  }
+
+  .info .image-group{
+    grid-gap: 0.5em;
+  }
+}

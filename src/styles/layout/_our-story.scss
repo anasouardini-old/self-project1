@@ -1,0 +1,36 @@
+
+
+
+
+/*
+  ///////////////////////////
+ //////// OUR STORY ////////
+///////////////////////////
+ */
+
+.our-story .global-headline{
+  margin-top: 4.3rem;
+}
+
+.our-story .info-img img{
+  width: 100%;
+}
+
+
+/* MEDIA QUERIES */
+
+@media(min-width: $bp-1){
+  .info{
+    display: flex;
+    align-items: center;
+  }
+
+  .info > div{
+    flex: 1;
+  }
+
+  .info > div + div{
+    margin-left: 1.5em;
+  }
+
+}

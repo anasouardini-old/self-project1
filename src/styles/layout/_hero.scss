@@ -1,0 +1,208 @@
+
+
+
+
+/*
+   //////////////////////
+  ///////// HERO ///////
+ //////////////////////
+ */
+
+
+ .hero h1,
+ .hero h2{
+   margin: 0;
+ }
+
+.hero{
+  height: 100vh;
+  background-image: url("../imgs/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  .headline{
+    font-size: 2.5rem;
+    letter-spacing: .3rem;
+    margin-right: -.3rem;
+    font-weight: 900;
+    color: $white-clr;
+    font-family: $main-font;
+    text-transform: uppercase;
+  }
+  
+  .sub-headline{
+    letter-spacing: 1px;
+    font-family: $secondary-font;
+    color: $accent-clr;
+    font-size: 6rem;
+    line-height: .55;
+    font-weight: 100;
+    display: block;
+    text-transform: capitalize;
+  }
+  
+  .sub-headline::first-letter{
+    font-size: 8rem;
+  }
+  
+  .separator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .separator .asterisk{
+    margin: 0 .7em;
+    color: $accent-clr;
+    opacity: 0;
+    animation: fadeIn .6s forwards;
+    animation-delay: 1s;
+  }
+
+  .separator .line{
+    width: 5.25rem;
+    height: 0.16rem;
+    background: $white-clr;
+    position: relative;
+    opacity: 0;
+    animation: grow 1s forwards;
+    animation-delay: 0.9s;
+  }
+
+  .left-line::before,
+  .right-line::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    border: 0.4rem solid transparent;
+  }
+
+  .left-line::before{
+    border-left-color: $white-clr;
+    left: 0;
+    transform: translate(-50%, -50%);
+  }
+
+  .right-line::before{
+    border-right-color: $white-clr;
+    right: 0;
+    transform: translate(50%, -50%);
+  }
+
+  .separator::before{
+    right: 2rem;
+  }
+
+  .separator::after{
+    left: 2rem;
+  }
+
+  .headline-description h5{
+    color: $white-clr;
+    font-size: 1rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 0.8em;
+    letter-spacing: 3px;
+    margin-right: -3px;
+    opacity: 0;
+    animation: fadeDown .6s forwards;
+    animation-delay: 1.4s;
+  }
+
+  .btn{
+    font-size: 0.8rem;
+    background-color: $white-clr;
+    padding: 0.6rem 1.2rem;
+    color: $secondary-clr;
+    border-radius: 0.25rem;
+    transition: background-color .3s ease-in, color .3s ease-in;
+    opacity: 0;
+    animation: fadeDown .6s forwards;
+    animation-delay: 1.4s;
+  }
+
+  .btn:hover,
+  .btn:focus{
+    color: $white-clr;
+    background-color: $accent-clr;
+    transition: background-color .3s ease-in, color .3s ease-in;
+  }
+
+}
+
+/* ANIMATIONS */
+
+@keyframes fadeUp {
+  0%{
+    transform: translateY(2.5rem);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scale {
+  0%{
+    transform: scale(2);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes grow {
+  0%{
+    width: 0;
+  }
+  100%{
+    opacity: 1;
+    width: 5.25rem;
+  }
+}
+
+@keyframes fadeDown {
+  0%{
+    transform: translateY(-0.6rem);
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* MEDIA QUERIES */
+
+@media(min-width: $bp-1){
+  .hero .sub-headline{
+    font-size: 7rem;
+  }
+
+  .hero .sub-headline::first-letter{
+    font-size: 9rem;
+  }
+
+  .hero .headline{
+    font-size: 2.93rem;
+  }
+
+  .hero .separator .line{
+    width: 6em;
+  }
+}
