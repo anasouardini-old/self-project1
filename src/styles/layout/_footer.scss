@@ -44,7 +44,6 @@ footer{
   }
   
   p{
-    max-width: 35rem;
     margin: 0 auto;
   }
 
@@ -134,4 +133,23 @@ footer{
     opacity: 0;
     transform: translateY(-.6rem);
   }
+}
+
+@media (min-width: $bp-1){
+  footer{
+
+    .about{
+      margin-bottom: 5em;
+    }
+
+    .devider{
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .social-media{
+      margin: 0;
+    }
+
+  } 
 }

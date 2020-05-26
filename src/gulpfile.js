@@ -50,7 +50,7 @@ function beautify() {
 
 /* //// COPY SRC //// */
 function copySrc(){
-  return src("src/*/*/*/*/*")
+  return src("src/**")
     .pipe(dest("build/src"));
 }
 
@@ -59,6 +59,6 @@ function copySettings(){
     .pipe(dest("build/src"));
 }
 
-exports.finish = parallel(copySrc, copySettings);
+exports.finish = series(copySrc, copySettings);
 
 exports.default = series(serve, beautify);

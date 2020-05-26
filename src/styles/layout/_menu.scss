@@ -1,3 +1,7 @@
+
+
+
+
 /*
   ///////////////////////////
  ///////// SIDE MENU ///////
@@ -97,10 +101,11 @@ body.menu-opened .menu-icon .bar:nth-of-type(3) {
 /* MEDIA QUERIES */
 
 @media(min-width: $bp-1){
+  .menu-icon{
+    display: none;
+  }
+  
   .menu{
-    .menu-icon{
-      display: none;
-    }
 
     background: transparent;
     position: static;

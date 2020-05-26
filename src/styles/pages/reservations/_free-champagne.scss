@@ -1,0 +1,30 @@
+
+
+
+
+/*
+  ////////////////////////
+ //// FREE-CHAMPAGNE ////
+////////////////////////
+ */
+
+
+.free-champagne{
+  color: $white-clr;
+  text-align: center;
+  padding-bottom: 4em;
+  .card{
+    background-color: $accent-clr;
+    padding: 2em;
+  }
+  .card-title{
+    text-transform: uppercase;
+    margin-bottom: 1.5em;
+    letter-spacing: 2px;
+    font-size: 1.1em;
+    font-weight: 100;
+  }
+  p{
+    color: inherit;
+  }
+}

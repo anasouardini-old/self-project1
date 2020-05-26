@@ -1,0 +1,36 @@
+.btn{
+  outline: none;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: -2px;
+}
+
+.body-btn{
+  position: relative;
+  font-size: 0.93rem;
+  color: $accent-clr;
+  transition: color .3s ease-in;
+  
+  &::before{
+    content: '';
+    position: absolute;
+    left: -1px;
+    bottom: -3px;
+    height: 2px;
+    width: 100%;
+    background-color: $accent-clr;
+    transition: background-color .3s ease-in;
+  }
+  
+  &:hover,
+  &:focus{
+    color: $secondary-clr;
+    transition: color .3s ease-in;
+  }
+  
+  &:hover::before,
+  &:focus::before {
+    background-color: $secondary-clr;
+  }
+}

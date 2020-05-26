@@ -1,0 +1,29 @@
+
+.slider{
+
+  .container{
+    width: 100%;
+  }
+
+  img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .swiper-slide {
+    width: 100%;
+    height: 550px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev{
+    color: $white-clr;
+    background-color: rgba($secondary-clr, .5);
+    padding: 2em 1.3em;
+  }
+
+  .swiper-pagination-bullet{
+    background-color: $white-clr;
+  }
+}

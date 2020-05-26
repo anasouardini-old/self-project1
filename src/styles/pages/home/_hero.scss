@@ -3,9 +3,9 @@
 
 
 /*
-   //////////////////////
-  ///////// HERO ///////
- //////////////////////
+   /////////////////////
+  //////// HERO ///////
+ /////////////////////
  */
 
 
@@ -16,10 +16,8 @@
 
 .hero{
   height: 100vh;
-  background-image: url("../imgs/hero.jpg");
+  background: url("../imgs/hero.jpg") no-repeat center;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   display: flex;
   align-items: center;
   text-align: center;
@@ -42,7 +40,6 @@
     line-height: .55;
     font-weight: 100;
     display: block;
-    text-transform: capitalize;
   }
   
   .sub-headline::first-letter{
