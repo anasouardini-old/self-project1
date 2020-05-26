@@ -21,7 +21,7 @@ window.addEventListener("scroll", () => {
   const currentScroll = window.pageYOffset;
   
   
-  if (currentScroll < 600) {
+  if (currentScroll < 300) {
     console.log(currentScroll);
     header.classList.remove("header-background");
     return;
@@ -31,3 +31,23 @@ window.addEventListener("scroll", () => {
 
 
 });
+
+
+
+var mySwiper = new Swiper ('.swiper-container', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+
+})

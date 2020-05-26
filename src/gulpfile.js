@@ -1,5 +1,6 @@
 const { watch, dest, src, series, parallel } = require("gulp");
 const sass = require("gulp-sass");
+const cssbeautify = require("gulp-cssbeautify");
 const concat = require("gulp-concat");
 const rename = require("gulp-rename");
 const webp = require("gulp-webp");
@@ -27,7 +28,7 @@ exports.imgwebp = function imgwebp() {
 
 
 /* //// SERVE //// */
-exports.default = function serve() {
+function serve() {
   browserSync.init({
     server: {
       baseDir: "./build",
@@ -36,15 +37,21 @@ exports.default = function serve() {
   });
 
   watch("src/styles/**/*.scss", css);
-  watch("build/*.html").on("change", browserSync.reload);
+  watch("build/*/*.html").on("change", browserSync.reload);
   watch("build/scripts/*.js").on("change", browserSync.reload);
 }
 
-/* //// FINISH //// */
+/* //// CSS BEAUTIFY //// */
+function beautify() {
+    return gulp.src('build/styles/style.css')
+        .pipe(cssbeautify())
+        .pipe(gulp.dest('build/styles/style.css'));
+}
+
+/* //// COPY SRC //// */
 function copySrc(){
   return src("src/*/*/*/*/*")
     .pipe(dest("build/src"));
-  
 }
 
 function copySettings(){
@@ -53,3 +60,5 @@ function copySettings(){
 }
 
 exports.finish = parallel(copySrc, copySettings);
+
+exports.default = series(serve, beautify);

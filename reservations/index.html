@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>rosa</title>
+    <script
+      src="https://kit.fontawesome.com/8f99e34c39.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../styles/swiper.min.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <header id="#top">
+      <div class="logo">LOGO</div>
+      <div class="menu-icon">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <div class="menu">
+        <ul class="menu-list">
+          <li><a class="active" href="/">home</a></li>
+          <li><a href="#about">reservations</a></li>
+          <li><a href="#menu">menu</a></li>
+          <li><a href="#reservation">reservation</a></li>
+          <li><a href="#news">news</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <section class="hero reservations-hero" id="hero">
+      <div class="container">
+        <div class="global-headline">
+          <h2 class="sub-headline">make a</h2>
+          <h1 class="headline">reservation</h1>
+        </div>
+        <div class="headline-description">
+          <div class="separator">
+            <div class="line left-line"></div>
+            <div class="asterisk">
+              <i class="fas fa-asterisk"></i>
+            </div>
+            <div class="line right-line"></div>
+          </div>
+          <div class="single-animation">
+            <h5>
+              Booking a table online is easy and takes just a couple
+              of minutes.
+            </h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="make-res">
+      <div class="container">
+        <h1>MAKE ONLINE RESERVATION</h1>
+        <div class="online-res">
+          <form action="">
+            <div class="res-inputs">
+              <div class="res-input res-date">
+                <label for="res-date">
+                  <i class="far fa-calendar-alt"></i>
+                </label>
+                <input id="res-date" type="date" name="res-date" />
+              </div>
+              <div class="res-input res-time">
+                <label for="res-time">
+                  <i class="far fa-clock"></i>
+                </label>
+                <select name="res-time" id="res-time">
+                  <option value="1:00">1:00 pm</option>
+                  <option value="2:00">2:00 pm</option>
+                  <option value="3:00">3:00 pm</option>
+                  <option value="4:00">4:00 pm</option>
+                  <option value="5:00">5:00 pm</option>
+                  <option value="6:00">6:00 pm</option>
+                </select>
+              </div>
+              <div class="res-input people-num">
+                <label for="people-num">
+                  <i class="fas fa-user-friends"></i>
+                </label>
+                <select name="people-num" id="people-num">
+                  <option value="1">1 Personne</option>
+                  <option value="2">2 People</option>
+                  <option value="3">3 People</option>
+                  <option value="4">4 People</option>
+                  <option value="5">5 People</option>
+                  <option value="6">6 People</option>
+                </select>
+              </div>
+            </div>
+            <button class="btn" type="submit">find a table</button>
+          </form>
+        </div>
+        <hr class="separator" />
+
+        <div class="make-res-description">
+          <div class="phone-res">
+            <h2>RESERVE BY PHONE</h2>
+            <p>
+              We take reservations for lunch and dinner. To make a
+              reservation, please call us at (027) 8338 145 between
+              10am-6pm, Monday to Friday.
+            </p>
+            <p>
+              We do not book the bar area – we leave this for walk-in
+              guests to ensure that we always offer some tables for
+              those who have not booked.
+            </p>
+          </div>
+          <div class="private-res">
+            <h2>PRIVATE DINING & EVENTS</h2>
+            <p>
+              Whatever your event or celebration, we are here to make
+              your special day a truly memorable one. Rosa’s private
+              dining experts are more than happy to create custom
+              floral arrangements and arrange for guests to meet Chef
+              Moise during the course of their meal. For parties of
+              8-12 we have the roastery table which is available for
+              private hire.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slider">
+      <div class="container">
+        <!-- Slider main container -->
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="../imgs/vk-drinking.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../imgs/tasteful-recipes.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../imgs/perfect-blend.jpg" alt="" />
+            </div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="private-mezzanine res-feature">
+      <div class="container">
+        <div class="info-description">
+          <div class="global-headline">
+            <h2 class="sub-headline">the private</h2>
+            <h1 class="headline">mezzanine</h1>
+            <div class="asterisk">
+              <i class="fas fa-asterisk"></i>
+            </div>
+          </div>
+          <p>
+            Rosa's 50 seat room, "The Meazzanine Room" features a
+            temperature-controlled wine cellar, displays of more wine
+            and a private atmosphere. A semi-private room,
+            "Barbaresco", is available for meetings, birthdays and
+            other occasions.
+          </p>
+          <h5>Seat up to 50 guests</h5>
+        </div>
+        <div class="info-image">
+          <img src="../imgs/seven_dials-006.jpg" alt="seven dials" />
+        </div>
+      </div>
+    </section>
+
+    <section class="dining-crown res-feature">
+      <div class="container">
+        <div class="info-image">
+          <img src="../imgs/air_street-010.jpg" alt="air street" />
+        </div>
+        <div class="info-description">
+          <div class="global-headline">
+            <h2 class="sub-headline">the dining</h2>
+            <h1 class="headline">crown</h1>
+            <div class="asterisk">
+              <i class="fas fa-asterisk"></i>
+            </div>
+          </div>
+          <p>
+            Overlooking the dining room and open kitchen, can seat up
+            to 75 guests or a standing reception of 130 guests. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip.
+          </p>
+          <h5>Seat up to 50 guests</h5>
+        </div>
+      </div>
+    </section>
+
+    <section class="free-champagne">
+      <div class="container">
+        <div class="card">
+          <h4 class="card-title">CHAMPAGNE ON US</h4>
+          <p>
+            Every Monday, Tuesday and Wednesday evening, we’re
+            offering groups of 10 or more that book an area in our bar
+            a complimentary bottle of Champagne.
+          </p>
+          <p>
+            Call our reservations team on (027) 8338 145 for more
+            information.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="back-to-top">
+          <a href="#top">
+            <i class="fas fa-chevron-up"></i>
+          </a>
+        </div>
+
+        <div class="content">
+          <div class="about animate-up">
+            <h4>about rosa</h4>
+            <div class="asterisk">
+              <i class="fas fa-asterisk"></i>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores illum iusto corporis neque. Iure, magnam
+              voluptatum! Eligendi nostrum at expedita, totam
+              voluptates tempora libero vero quos placeat consequuntur
+              iure dolore!
+            </p>
+          </div>
+          <div class="devider animate-bottom">
+            <div class="social-media">
+              <h4>follow along</h4>
+              <ul class="social-icons">
+                <li>
+                  <a href=""><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="fab fa-facebook-square"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href=""><i class="fab fa-pinterest"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fab fa-tripadvisor"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="newsletter">
+              <h4>news letter</h4>
+              <form action="">
+                <input
+                  type="email"
+                  place-holder="Your Email Address"
+                />
+                <button type="submit">
+                  <i class="fas fa-envelope"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../scripts/jquery.min.js"></script>
+    <script src="../scripts/swiper.min.js"></script>
+    <script src="../scripts/script.js"></script>
+  </body>
+</html>
