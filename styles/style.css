@@ -20,7 +20,7 @@ html {
   box-sizing: border-box; }
 
 .container {
-  width: 90%;
+  width: 90vw;
   max-width: 1200px;
   margin: 0 auto; }
 
@@ -174,6 +174,27 @@ p + p {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 0.93em; }
+
+/*
+  ////////////////////////
+ //// FREE-CHAMPAGNE ////
+////////////////////////
+ */
+.free-champagne {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 4em; }
+  .free-champagne .card {
+    background-color: #c59d5f;
+    padding: 2em; }
+  .free-champagne .card-title {
+    text-transform: uppercase;
+    margin-bottom: 1.5em;
+    letter-spacing: 2px;
+    font-size: 1.1em;
+    font-weight: 100; }
+  .free-champagne p {
+    color: inherit; }
 
 /*
   ////////////////////////
@@ -761,23 +782,97 @@ footer {
 .dining-crown .global-headline {
   margin-top: 6em; }
 
-/*
-  ////////////////////////
- //// FREE-CHAMPAGNE ////
-////////////////////////
- */
-.free-champagne {
-  color: #fff;
-  text-align: center;
-  padding-bottom: 4em; }
-  .free-champagne .card {
+.menu-hero {
+  height: 50vh;
+  background: url("../imgs/menu-hero.jpg") no-repeat center;
+  background-size: cover; }
+
+.menu-about p {
+  text-align: left; }
+
+.restaurant-menu-list {
+  color: #515151; }
+  .restaurant-menu-list .asterisk {
+    font-size: 0.9rem;
+    text-align: center; }
+  .restaurant-menu-list .menu-heading {
+    background-color: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10em 0;
+    width: 100vw;
+    margin: 5em 0 2em -5vw; }
+    .restaurant-menu-list .menu-heading h2 {
+      text-align: center;
+      color: #fff;
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: 3px; }
+  .restaurant-menu-list h2,
+  .restaurant-menu-list h3 {
+    letter-spacing: 1px; }
+  .restaurant-menu-list .menu-item + .menu-item {
+    margin-top: 2em; }
+  .restaurant-menu-list .menu-item.selected-menu-item {
+    position: relative;
+    margin-top: 4em; }
+  .restaurant-menu-list .selected-menu-item::before {
+    content: '';
+    position: absolute;
+    top: -.8em;
+    right: -3vw;
+    bottom: -0.5em;
+    left: -3vw;
+    border: 2px solid #c59d5f; }
+  .restaurant-menu-list .selected-menu-item::after {
+    content: 'chef selection';
+    position: absolute;
+    top: -2.4em;
+    left: -3vw;
     background-color: #c59d5f;
-    padding: 2em; }
-  .free-champagne .card-title {
+    color: #fff;
     text-transform: uppercase;
-    margin-bottom: 1.5em;
-    letter-spacing: 2px;
-    font-size: 1.1em;
-    font-weight: 100; }
-  .free-champagne p {
-    color: inherit; }
+    padding: 0.2em 0.8em; }
+  .restaurant-menu-list .menu-item-info {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden; }
+  .restaurant-menu-list .menu-item-info::before {
+    content: '.............................................................................................................';
+    position: absolute;
+    top: -0.4rem;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    font-size: 1.5rem;
+    letter-spacing: 1px; }
+  .restaurant-menu-list .menu-item-title,
+  .restaurant-menu-list .menu-item-price {
+    background-color: #fff;
+    padding: 0 0.5em 0 0; }
+  .restaurant-menu-list .menu-item-price {
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 0 0 0 0.5em; }
+  .restaurant-menu-list h2 {
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 100;
+    text-transform: uppercase; }
+  .restaurant-menu-list hr {
+    margin: 1.3em 0; }
+  .restaurant-menu-list h3 {
+    font-size: 1.1rem; }
+  .restaurant-menu-list p.menu-item-description {
+    text-align: left; }
+
+.menu-lunch .menu-heading {
+  background-image: url("../imgs/menu-lunch.jpg"); }
+
+.menu-dinner .menu-heading {
+  background-image: url("../imgs/menu-dinner.jpg"); }
+
+.menu-drinks .menu-heading {
+  background-image: url("../imgs/menu-drinks.jpg"); }
