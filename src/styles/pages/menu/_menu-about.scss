@@ -1,6 +1,24 @@
 .menu-about{
+  .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    p{
+      margin-top: 1em;
+      @media (min-width: $bp-2){
+        width: 45%;
+      }
+    }
+  }
+}
+
+
+section{
   p{
     text-align: left;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -35,13 +53,24 @@
     letter-spacing: 1px;
   }
 
-  .menu-item + .menu-item{
-    margin-top: 2em;
+  .menu-items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
+
+  .menu-item{
+    margin: 1.5em 0;
+    width: 100%;
+
+    @media (min-width: $bp-2){
+      width: 45%;
+    }
+  }
+
 
   .menu-item.selected-menu-item{
     position: relative;
-    margin-top: 4em;
   }
 
   .selected-menu-item::before{
@@ -73,7 +102,7 @@
   }
   
   .menu-item-info::before{
-    content: '.............................................................................................................';
+    content: '......................................................................................................................................';
     position: absolute;
     top: -0.4rem;
     left: 0;

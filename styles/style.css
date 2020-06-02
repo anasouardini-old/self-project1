@@ -186,7 +186,10 @@ p + p {
   padding-bottom: 4em; }
   .free-champagne .card {
     background-color: #c59d5f;
-    padding: 2em; }
+    padding: 2em;
+    max-width: 630px;
+    margin-left: auto;
+    margin-right: auto; }
   .free-champagne .card-title {
     text-transform: uppercase;
     margin-bottom: 1.5em;
@@ -195,6 +198,16 @@ p + p {
     font-weight: 100; }
   .free-champagne p {
     color: inherit; }
+
+@media (min-width: 900px) {
+  .free-champagne .card {
+    max-width: 630px;
+    margin-left: auto;
+    margin-right: auto; }
+  .free-champagne p {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; } }
 
 /*
   ////////////////////////
@@ -787,8 +800,20 @@ footer {
   background: url("../imgs/menu-hero.jpg") no-repeat center;
   background-size: cover; }
 
-.menu-about p {
-  text-align: left; }
+.menu-about .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .menu-about .container p {
+    margin-top: 1em; }
+    @media (min-width: 900px) {
+      .menu-about .container p {
+        width: 45%; } }
+
+section p {
+  text-align: left;
+  margin-left: 0;
+  margin-right: 0; }
 
 .restaurant-menu-list {
   color: #515151; }
@@ -812,11 +837,18 @@ footer {
   .restaurant-menu-list h2,
   .restaurant-menu-list h3 {
     letter-spacing: 1px; }
-  .restaurant-menu-list .menu-item + .menu-item {
-    margin-top: 2em; }
+  .restaurant-menu-list .menu-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+  .restaurant-menu-list .menu-item {
+    margin: 1.5em 0;
+    width: 100%; }
+    @media (min-width: 900px) {
+      .restaurant-menu-list .menu-item {
+        width: 45%; } }
   .restaurant-menu-list .menu-item.selected-menu-item {
-    position: relative;
-    margin-top: 4em; }
+    position: relative; }
   .restaurant-menu-list .selected-menu-item::before {
     content: '';
     position: absolute;
@@ -840,7 +872,7 @@ footer {
     position: relative;
     overflow: hidden; }
   .restaurant-menu-list .menu-item-info::before {
-    content: '.............................................................................................................';
+    content: '......................................................................................................................................';
     position: absolute;
     top: -0.4rem;
     left: 0;
