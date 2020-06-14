@@ -1,0 +1,29 @@
+.social-media{
+  margin-bottom: 2.5em;
+  
+  h4{
+    margin-bottom: 0;
+  }
+  .social-icons{
+    display: flex;
+    justify-content: center;
+    font-size: 1.25rem;
+    
+    a{
+      color: $white-clr;
+      opacity: .4;
+      transition: color.3s ease, opacity .3s ease;
+    }
+
+    li{
+      padding: 1.25em 1.25em;
+    }
+
+    a:hover,
+    a:focus{
+      outline: none;
+      opacity: .8;
+      color: $accent-clr;
+    }
+  }
+}

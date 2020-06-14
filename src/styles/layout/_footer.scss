@@ -51,41 +51,6 @@ footer{
     margin-bottom: 3.37em;
   }
 
-  .social-media{
-    margin-bottom: 2.5em;
-    
-    h4{
-      margin-bottom: 0;
-    }
-  }
-
-
-  .social-icons{
-    display: flex;
-    justify-content: center;
-    font-size: 1.25rem;
-    
-    a{
-      color: $white-clr;
-    }
-
-    li{
-      padding: 1.25em 1.25em;
-    }
-
-    a{
-      opacity: .4;
-      transition: color.3s ease, opacity .3s ease;
-    }
-
-    a:hover,
-    a:focus{
-      outline: none;
-      opacity: .8;
-      color: $accent-clr;
-    }
-  }
-
   form{
     position: relative;
     width: 100%;
