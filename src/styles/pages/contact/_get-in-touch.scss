@@ -1,4 +1,7 @@
 .contact-get-in-touch{
+
+  padding: 5em;
+
   h2{
     text-transform: uppercase;
     color: $main-clr;
@@ -8,6 +11,7 @@
 
   p{
     text-align: left;
+    margin: 0;
   }
   
   .social-media{
@@ -76,6 +80,23 @@
       color: $white-clr;
       border: none;
     }
+  }
+
+  @media(min-width: $bp-3){
+
+    .container{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .get-in-touch-content{
+      width: 55%;
+    }
+
+    .contact-form{
+      width: 40%;
+    }
+
   }
 
 }
